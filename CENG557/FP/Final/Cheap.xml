@@ -1,0 +1,121 @@
+<configuration model="Home_Automation_System">
+	<feature id="_r">
+		<name>Smart_Home_System</name>
+		<type>templateModel</type>
+		<value>1</value>
+		<decisionType>propagated</decisionType>
+		<decisionStep>1</decisionStep>
+	</feature>
+	<feature id="_r_1">
+		<name>Devices</name>
+		<type>optional</type>
+		<value>1</value>
+		<decisionType>propagated</decisionType>
+		<decisionStep>2</decisionStep>
+	</feature>
+	<feature id="_r_1_32_33">
+		<name>Devices_Light</name>
+		<type>grouped</type>
+		<value>1</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>2</decisionStep>
+	</feature>
+	<feature id="_r_1_32_34">
+		<name>Devices_MobilePhone</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>3</decisionStep>
+	</feature>
+	<feature id="_r_1_32_35">
+		<name>Devices_Siren</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>4</decisionStep>
+	</feature>
+	<feature id="_r_1_32_36">
+		<name>Devices_WallPanel</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>5</decisionStep>
+	</feature>
+	<feature id="_r_24">
+		<name>Actuators</name>
+		<type>optional</type>
+		<value>1</value>
+		<decisionType>propagated</decisionType>
+		<decisionStep>6</decisionStep>
+	</feature>
+	<feature id="_r_24_25">
+		<name>Actuators_Alarm</name>
+		<type>mandatory</type>
+		<value>1</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>6</decisionStep>
+	</feature>
+	<feature id="_r_24_26_27">
+		<name>Actuators_LightController</name>
+		<type>grouped</type>
+		<value>1</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>7</decisionStep>
+	</feature>
+	<feature id="_r_24_26_28">
+		<name>Actuators_ShutterController</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>8</decisionStep>
+	</feature>
+	<feature id="_r_24_26_29">
+		<name>Actuators_TemperatureController</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>9</decisionStep>
+	</feature>
+	<feature id="_r_37">
+		<name>Sensors</name>
+		<type>optional</type>
+		<value>1</value>
+		<decisionType>propagated</decisionType>
+		<decisionStep>10</decisionStep>
+	</feature>
+	<feature id="_r_37_38_39">
+		<name>Sensors_DoorOpenDetector</name>
+		<type>grouped</type>
+		<value>1</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>10</decisionStep>
+	</feature>
+	<feature id="_r_37_38_40">
+		<name>Sensors_GlassBreakDetector</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>11</decisionStep>
+	</feature>
+	<feature id="_r_37_38_41">
+		<name>Sensors_SmokeDetector</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>12</decisionStep>
+	</feature>
+	<feature id="_r_37_38_42">
+		<name>Sensors_SunsetDetector</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>13</decisionStep>
+	</feature>
+	<feature id="_r_37_38_43">
+		<name>Sensors_WaterDetector</name>
+		<type>grouped</type>
+		<value>0</value>
+		<decisionType>manual</decisionType>
+		<decisionStep>14</decisionStep>
+	</feature>
+</configuration>

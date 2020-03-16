@@ -1,0 +1,39 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Jan 22, 2020 - 3:12 PM  -->
+<feature_model name="Home_Automation_System">
+<meta>
+<data name="description">HAS</data>
+<data name="creator">Lutfu Melih Bugra Oguzer</data>
+<data name="address"></data>
+<data name="email">bugraog@gmail.com</data>
+<data name="phone"></data>
+<data name="website"></data>
+<data name="organization">-</data>
+<data name="department"></data>
+<data name="date">1/22/2020</data>
+<data name="reference"></data>
+</meta>
+<feature_tree>
+:r Smart_Home_System(_r)
+	:o Devices(_r_1)
+		:g (_r_1_32) [1,*] 
+			: Devices_Light(_r_1_32_33)
+			: Devices_MobilePhone(_r_1_32_34)
+			: Devices_Siren(_r_1_32_35)
+			: Devices_WallPanel(_r_1_32_36)
+	:o Actuators(_r_24)
+		:m Actuators_Alarm(_r_24_25)
+		:g (_r_24_26) [1,*] 
+			: Actuators_LightController(_r_24_26_27)
+			: Actuators_ShutterController(_r_24_26_28)
+			: Actuators_TemperatureController(_r_24_26_29)
+	:o Sensors(_r_37)
+		:g (_r_37_38) [1,*] 
+			: Sensors_DoorOpenDetector(_r_37_38_39)
+			: Sensors_GlassBreakDetector(_r_37_38_40)
+			: Sensors_SmokeDetector(_r_37_38_41)
+			: Sensors_SunsetDetector(_r_37_38_42)
+			: Sensors_WaterDetector(_r_37_38_43)
+</feature_tree>
+<constraints>
+</constraints>
+</feature_model>
